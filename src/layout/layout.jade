@@ -1,0 +1,39 @@
+-var projectName = "てんぷれのさいと"
+-var projectLogo = "てんぷのさいと"
+
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+
+    block title
+
+      title #{projectName}
+
+    // Viewport mobile tag for sensible mobile support
+    meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1")
+    link(rel="shortcut icon" href="/favicon.ico")
+
+    block scripts
+
+      script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+
+    block styles
+
+      link(rel="stylesheet", href="/css/main.css")
+
+    // TEMPLATES
+
+    // TEMPLATES END
+
+  body
+      block header
+        header
+          div#projectLogo
+            h1
+              a(href="/") #{projectLogo}
+              
+      div.container
+        block content
+
+      block footer
